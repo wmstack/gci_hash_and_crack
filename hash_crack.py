@@ -62,7 +62,7 @@ def offline_crack(hash_string, hash_function):
             if hash_function(line.rstrip().encode("utf-8")).hexdigest() == hash_string:
                 print( 
                     termcolor.colored("[+] found --> {}  =  {}"
-                    .format(line.rstrip(),hash_string) ,"green"
+                    .format(hash_string, line.rstrip(), line.rstrip()) ,"green"
                     )
                 )
                 break
@@ -83,7 +83,7 @@ def online_crack(hash_string, hash_function, hash_name):
         cracked_hash = nodes[0].text
         print( 
                 termcolor.colored("[+] found --> {}  =  {}"
-                .format(cracked_hash.rstrip(),hash_string) ,"green"
+                .format(hash_string, cracked_hash.rstrip()) ,"green"
                 )
             )
     else:
