@@ -1,0 +1,4 @@
+termcolor
+lxml
+requests
+fake_useragent
