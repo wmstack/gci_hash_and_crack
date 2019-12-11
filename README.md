@@ -4,6 +4,9 @@ Python program to hash and crack hashes. Supports cool online cracking from http
 # Usage
 
 ```
+#install requirements
+pip install -r requirements.txt
+
 ./hash_crack.py
 To Hash press 1 and to Crack Hash press 2 : 1
 What kind of HASHING
